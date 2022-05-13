@@ -292,7 +292,7 @@ mimicExtensions(Ssl::X509_Pointer & cert, Ssl::X509_Pointer const & mimicCert)
         DecipherOnly
     };
 
-    int mimicAlgo = OBJ_obj2nid(mimicCert.get()->cert_info->key->algor->algorithm);
+    int mimicAlgo = OBJ_obj2nid(X509_get_algorithm(mimicCert.get()));
 
     int added = 0;
     int nid;

@@ -1,0 +1,7 @@
+Makefile.in
+test-driver
+libltdl/
+cfgaux/
+aclocal.m4
+configure
+include/autoconf.h.in
